@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2% 10%;
+    font-family: "Raleway";
+}
+
+.title-container {
+    background-image: url("../assets/home.png");
+    height: 50rem;
+    width: 80rem;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    font-family: "Raleway";
+
+    h1 {
+        text-align: center;
+        font-size: 5rem;
+        color: white;
+        font-family: "Raleway";
+    }
+    
+    button {
+        font-size: 1.5rem;
+        box-sizing: none;
+        display: inline-block;
+        background: white;
+        text-transform: Capitalize;
+        text-decoration: none;
+        padding: .8rem 3rem;
+        box-shadow: .1rem .1rem .2rem black;
+
+        .border-radius(.5rem);
+    }
+}
+
+
+
+.artists-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: .1rem solid darkgray;
+
+    img {
+        width: 30rem;
+        height: 25rem;
+        border-radius: 1rem;
+    }
+}
+
+.artist {
+    .main();
+    width: 40rem;
+    .flex();
+    flex-direction: column;
+    font-size: 1.2rem;
+    text-align: center;
+
+    a {
+        padding: 3%;
+        font-size: 3rem;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media(max-width: 500px) {
+    body {
+        padding: 5%;
+        width: 100%;
+
+        header {
+            width: 100%;
+
+            a {
+                font-size: 1.5rem;
+                padding: 1%;
+            }
+        }
+
+        .title-container {
+            width: 100%;
+            height: 25rem;
+            
+            h1 {
+                font-size: 3rem;
+            }
+            button {
+                font-size: 1rem;
+                padding: .5rem 1rem;
+                margin: 1rem;
+            }
+        }
+
+        .artists-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .artist {
+            width: 100%;
+            
+            a {
+                font-size: 2rem;
+            }
+            img {
+                width: 20rem;
+                height: 15rem;
+            }
+        }
+    }
+}
